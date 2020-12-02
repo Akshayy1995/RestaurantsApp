@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/profile_main_container"
+    android:background="@color/colorBG">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/colorWhite">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/colorBG">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorEditTextBG"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:id="@+id/profile_div">
+
+                    <ImageView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_marginStart="15dp"
+                        android:id="@+id/profile_img"
+                        android:src="@drawable/profile"
+                        android:layout_centerVertical="true"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/profile_img"
+                        android:layout_marginStart="10dp"
+                        android:textSize="16sp"
+                        android:text="@string/profile"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="normal"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorEditTextBG"/>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:id="@+id/change_password_div">
+
+                    <ImageView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_marginStart="15dp"
+                        android:id="@+id/change_pass_img"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/lock"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/change_pass_img"
+
+                        android:text="@string/change_pass"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="normal"
+                        android:layout_marginStart="10dp"
+                        android:textSize="16sp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorEditTextBG"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:visibility="gone"
+                    android:id="@+id/language_div">
+
+                    <ImageView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_marginStart="15dp"
+                        android:id="@+id/lan_img"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_world"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/lan_img"
+                        android:text="@string/language"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="normal"
+                        android:layout_marginStart="10dp"
+                        android:textSize="16sp"
+                        android:id="@+id/language_txt"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorEditTextBG"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

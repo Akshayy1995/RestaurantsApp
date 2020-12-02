@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/preview_print_btn"
+        android:background="@color/standard_white">
+        <com.leerybit.escpos.widgets.TicketPreview
+            android:id="@+id/ticket_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="#000" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/preview_print_btn"
+        android:background="@color/standard_white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Print"
+            android:id="@+id/positive_btn"
+            android:layout_weight="1"
+            android:textColor="@color/colorAccent"/>
+
+    </LinearLayout>
+</RelativeLayout>

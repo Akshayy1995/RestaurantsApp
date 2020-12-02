@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Foodies Restaurants</string>
+
+
+    <string name="language">لغة</string>
+
+    <string-array name="navigation_drawer_items_array">
+        <item>وظائف</item>
+        <item>التاريخ</item>
+        <item>كسب</item>
+        <item>الملف الشخصي</item>
+        <item>تسجيل خروج</item>
+    </string-array>
+
+    <string name="drawer_open">افتح</string>
+    <string name="drawer_close">قريب</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="log_out">تسجيل خروج</string>
+    <string name="help">مساعدة</string>
+    <string name="change_pass">تغيير كلمة المرور</string>
+    <string name="weekly_earning">الكسب الأسبوعي</string>
+    <string name="edit_account">تحرير الحساب</string>
+    <string name="rider">رايدر</string>
+    <string name="app_help">مساعدة التطبيق</string>
+    <string name="change_password">تغيير كلمة المرور</string>
+    <string name="email_hint">John@gmail.com</string>
+    <string name="password_hint">6 مشارك على الأقل</string>
+
+
+    //activity_change_pass
+    <string name="old_password">كلمة سر قديمة</string>
+    <string name="new_password">كلمة السر الجديدة</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="change">يتغيرون</string>
+
+
+    //activity_login
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمه السر</string>
+    <string name="login">تسجيل الدخول</string>
+
+
+    //activity_main
+    <string name="jobs">وظائف</string>
+
+
+    //custom_dialog
+    <string name="add_instructions">أضف تعليمات</string>
+    <string name="cancel">إلغاء</string>
+    <string name="done">منجز</string>
+
+
+    //history_frag
+    <string name="instructions">تعليمات</string>
+    <string name="some_ins">Some Ins</string>
+    <string name="order_detail">تفاصيل الطلب</string>
+    <string name="order_hotel_detail">ترتيب الفندق بالتفصيل</string>
+    <string name="hotel_name">اسم فندق</string>
+    <string name="address">عنوان</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="order_user_detail">تفاصيل طلب المستخدم</string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="sariyas">ساريات</string>
+    <string name="phone_number_c">رقم الهاتف</string>
+    <string name="order_payment_details">تفاصيل الدفع النظام</string>
+    <string name="tax">ضريبة</string>
+    <string name="_16">(16%)</string>
+    <string name="_00_00">$00.00</string>
+    <string name="delivery_fee">رسوم التوصيل</string>
+    <string name="total">مجموع</string>
+    <string name="payment_method">طريقة الدفع او السداد</string>
+    <string name="accept">قبول</string>
+    <string name="decline">انخفاض</string>
+    <string name="whoops">عفوًا!</string>
+    <string name="let_us_know_where_are_you_so_we_can_recommend_nearby_events">أخبرنا أين أنت حتى نوصي بالأحداث القريبة.</string>
+
+
+    //jobs_frag
+    <string name="pending_orders">الأوامر المعلقة</string>
+    <string name="accepted_orders">الطلبات المقبولة</string>
+    <string name="order_id">طلب # id</string>
+    <string name="instruction_s">تعليمات</string>
+    <string name="restaurants_name">اسم المطاعم</string>
+    <string name="restaurants_address">عنوان المطاعم</string>
+    <string name="restaurants_number">رقم المطاعم</string>
+    <string name="user_address">عنوان المستخدم</string>
+    <string name="user_number">رقم المستخدم</string>
+    <string name="rider_tip">نصيحة رايدر</string>
+    <string name="subtotal">المجموع الفرعي</string>
+    <string name="card">بطاقة</string>
+    <string name="_1_x_small_x_2">1 × صغير × 2 دولار</string>
+    <string name="item_name">اسم العنصر</string>
+    <string name="new_1_section_name">1 اسم قسم جديد</string>
+    <string name="special_pizza_x1">بيتزا خاصة X1</string>
+    <string name="print">Print</string>
+
+
+</resources>

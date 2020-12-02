@@ -1,0 +1,127 @@
+{
+  "project_info": {
+    "project_number": "94609616047",
+    "firebase_url": "https://foodies-59aa1.firebaseio.com",
+    "project_id": "foodies-59aa1",
+    "storage_bucket": "foodies-59aa1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94609616047:android:17cc2f312cdff9d456385a",
+        "android_client_info": {
+          "package_name": "com.digiomega.hangrymatesrestaurants"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "94609616047-r7sj5q0n02qfi5isef8vv9a1e8s5ingt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXkG34v2ha2DnCtUWwP9GtAZbBZB1z40w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "94609616047-m8hfjc4d0n89jjrr0shofla9dirb4pof.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "94609616047-m9p9aecg9rnrdh7q2m7vhhb8jb63eolt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.digiomega.hangrymates"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94609616047:android:7fdd5dbde321d59b56385a",
+        "android_client_info": {
+          "package_name": "com.foodies.digiomega"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "94609616047-1of6t5ed77999hg65qoebvpa4vjshsdt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.foodies.digiomega",
+            "certificate_hash": "7b983dcd6079561c77cab201dbdda8b65a537d2a"
+          }
+        },
+        {
+          "client_id": "94609616047-r7sj5q0n02qfi5isef8vv9a1e8s5ingt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXkG34v2ha2DnCtUWwP9GtAZbBZB1z40w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "94609616047-m8hfjc4d0n89jjrr0shofla9dirb4pof.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "94609616047-m9p9aecg9rnrdh7q2m7vhhb8jb63eolt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.digiomega.hangrymates"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94609616047:android:0efa945848f77deb56385a",
+        "android_client_info": {
+          "package_name": "com.foodies.hangrymatesrider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "94609616047-r7sj5q0n02qfi5isef8vv9a1e8s5ingt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXkG34v2ha2DnCtUWwP9GtAZbBZB1z40w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "94609616047-m8hfjc4d0n89jjrr0shofla9dirb4pof.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "94609616047-m9p9aecg9rnrdh7q2m7vhhb8jb63eolt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.digiomega.hangrymates"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

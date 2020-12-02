@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        //applicationId "com.qboxus.foodiesrestaurants"
+        applicationId "com.digiomega.hangrymatesrestaurants"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 5
+        versionName "1.1.4"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
+    aaptOptions { cruncherEnabled = false }
+
+    dexOptions {
+
+        jumboMode true
+        javaMaxHeapSize "4g"
+
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false;
+        disable 'deprecation'
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.mcxiaoke.volley:library-aar:1.0.0'
+    implementation 'androidx.percentlayout:percentlayout:1.0.0'
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation platform('com.google.firebase:firebase-bom:25.12.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.firebaseui:firebase-ui-database:6.0.2'
+    implementation 'com.google.firebase:firebase-database:19.1.0'
+    implementation 'com.google.firebase:firebase-messaging:20.0.0'
+
+    implementation 'com.google.android.gms:play-services-gcm:17.0.0'
+    implementation project(':library')
+    implementation 'com.gmail.samehadar:iosdialog:1.0'
+
+
+    implementation 'cat.ereza:customactivityoncrash:2.3.0'
+}
+apply plugin: 'com.google.gms.google-services'

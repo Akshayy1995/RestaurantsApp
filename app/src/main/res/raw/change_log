@@ -1,0 +1,11 @@
+Replace all the "layout" folder in res with new "layout" folder
+
+A new "xml" folder is added in res folder
+
+changes in Manifiest File
+
+com.foodies.restaurants.tablet >> AllConstant >> Config
+
+com.foodies.restaurants.tablet >> Fragments >> EarningFragment  (new File)
+
+layout >> earning_fragment  new File

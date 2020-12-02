@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">HangryMates Restaurants</string>
+
+
+    <string name="language">Language</string>
+
+
+    <string-array name="language_names_for_show">
+        <item>English</item>
+        <item>español</item>
+        <item>العربية</item>
+    </string-array>
+
+
+    <string-array name="language_names_for_api">
+        <item>english</item>
+        <item>spanish</item>
+        <item>arabic</item>
+    </string-array>
+
+    <string-array name="language_code">
+        <item>en</item>
+        <item>es</item>
+        <item>ar</item>
+    </string-array>
+
+
+    <string-array name="navigation_drawer_items_array">
+        <item>Jobs</item>
+        <item>History</item>
+        <item>Earning</item>
+        <item>Profile</item>
+        <item>Logout</item>
+    </string-array>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="profile">Profile</string>
+    <string name="log_out">Log Out</string>
+    <string name="help">Help</string>
+    <string name="change_pass">Change Password</string>
+    <string name="weekly_earning">Weekly Earning</string>
+    <string name="edit_account">Account Info</string>
+    <string name="rider">Rider</string>
+    <string name="app_help">App Help</string>
+    <string name="change_password">Change Password</string>
+    <string name="email_hint">John@gmail.com</string>
+    <string name="password_hint">At least 6 charector</string>
+
+
+    //activity_change_pass
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="change">Change</string>
+
+
+    //activity_login
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+
+
+    //activity_main
+    <string name="jobs">Jobs</string>
+
+
+    //custom_dialog
+    <string name="add_instructions">Add Instructions</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+
+
+    //history_frag
+    <string name="instructions">INSTRUCTIONS</string>
+    <string name="some_ins">Some Ins</string>
+    <string name="order_detail">ORDER DETAIL</string>
+    <string name="order_hotel_detail">ORDER HOTEL DETAIL</string>
+    <string name="hotel_name">Hotel name</string>
+    <string name="address">Address</string>
+    <string name="phone_number">phone number</string>
+    <string name="order_user_detail">ORDER USER DETAIL</string>
+    <string name="user_name">User Name</string>
+    <string name="sariyas">sariyas</string>
+    <string name="phone_number_c">Phone Number</string>
+    <string name="order_payment_details">ORDER PAYMENT DETAILS</string>
+    <string name="tax">Tax</string>
+    <string name="_16">(16%)</string>
+    <string name="_00_00">$00.00</string>
+    <string name="delivery_fee">Delivery Fee</string>
+    <string name="total">Total</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="whoops">Whoops!</string>
+    <string name="let_us_know_where_are_you_so_we_can_recommend_nearby_events">Let us know where are you so we can recommend nearby events.</string>
+
+
+    //jobs_frag
+    <string name="pending_orders">Pending Orders</string>
+    <string name="accepted_orders">Accepted Orders</string>
+    <string name="order_id">Order # id</string>
+    <string name="instruction_s">Instruction</string>
+    <string name="restaurants_name">Restaurants Name</string>
+    <string name="restaurants_address">Restaurants Address</string>
+    <string name="restaurants_number">Restaurants Number</string>
+    <string name="user_address">User Address</string>
+    <string name="user_number">User Number</string>
+    <string name="rider_tip">Rider Tip</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="card">Card</string>
+    <string name="_1_x_small_x_2">1 x Small x $2</string>
+    <string name="item_name">Item Name</string>
+    <string name="new_1_section_name">New 1 Section Name</string>
+    <string name="special_pizza_x1">Special Pizza X1</string>
+    <string name="print">Print</string>
+
+
+</resources>

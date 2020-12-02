@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Foodies Restaurants</string>
+
+
+
+
+    <string name="language">Idioma</string>
+    <string-array name="navigation_drawer_items_array">
+        <item>Trabajos</item>
+        <item>Historia</item>
+        <item>Ganadora</item>
+        <item>Perfil</item>
+        <item>cerrar sesión</item>
+    </string-array>
+
+
+    <string name="drawer_open">Abierta</string>
+    <string name="drawer_close">Cerca</string>
+    <string name="profile">Perfil</string>
+    <string name="log_out">Cerrar sesión</string>
+    <string name="help">Ayuda</string>
+    <string name="change_pass">Cambia la contraseña</string>
+    <string name="weekly_earning">Ganancias semanales</string>
+    <string name="edit_account">Editar cuenta</string>
+    <string name="rider">Jinete</string>
+    <string name="app_help">Ayuda de la aplicación</string>
+    <string name="change_password">Cambia la contraseña</string>
+    <string name="email_hint">John@gmail.com</string>
+    <string name="password_hint">Al menos 6 charector</string>
+
+
+    //activity_change_pass
+    <string name="old_password">Contraseña anterior</string>
+    <string name="new_password">Nueva contraseña</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="change">Cambio</string>
+
+
+    //activity_login
+    <string name="email">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Iniciar sesión</string>
+
+
+    //activity_main
+    <string name="jobs">Trabajos</string>
+
+
+    //custom_dialog
+    <string name="add_instructions">Agregar instrucciones</string>
+    <string name="cancel">Cancelar</string>
+    <string name="done">Hecho</string>
+
+
+    //history_frag
+    <string name="instructions">INSTRUCCIONES</string>
+    <string name="some_ins">Some Ins</string>
+    <string name="order_detail">DETALLE DE LA ORDEN</string>
+    <string name="order_hotel_detail">PEDIR DETALLE DEL HOTEL</string>
+    <string name="hotel_name">Nombre del hotel</string>
+    <string name="address">Habla a</string>
+    <string name="phone_number">número de teléfono</string>
+    <string name="order_user_detail">PEDIR DETALLE DEL USUARIO</string>
+    <string name="user_name">Nombre de usuario</string>
+    <string name="sariyas">sariyas</string>
+    <string name="phone_number_c">Número de teléfono</string>
+    <string name="order_payment_details">DETALLES DE PAGO DE PEDIDOS</string>
+    <string name="tax">Impuesto</string>
+    <string name="_16">(16%)</string>
+    <string name="_00_00">$00.00</string>
+    <string name="delivery_fee">Gastos de envío</string>
+    <string name="total">Total</string>
+    <string name="payment_method">Método de pago</string>
+    <string name="accept">Aceptar</string>
+    <string name="decline">Disminución</string>
+    <string name="whoops">Whoops!</string>
+    <string name="let_us_know_where_are_you_so_we_can_recommend_nearby_events">Háganos saber dónde está para que podamos recomendar eventos cercanos.</string>
+
+
+    //jobs_frag
+    <string name="pending_orders">Ordenes pendientes</string>
+    <string name="accepted_orders">Órdenes aceptadas</string>
+    <string name="order_id">Orden # id</string>
+    <string name="instruction_s">Instrucción</string>
+    <string name="restaurants_name">Nombre de restaurantes</string>
+    <string name="restaurants_address">Dirección de restaurantes</string>
+    <string name="restaurants_number">Número de restaurantes</string>
+    <string name="user_address">Dirección de usuario</string>
+    <string name="user_number">Numero de usuario</string>
+    <string name="rider_tip">Consejo del jinete</string>
+    <string name="subtotal">Total parcial</string>
+    <string name="card">Tarjeta</string>
+    <string name="_1_x_small_x_2">1 x pequeño x $ 2</string>
+    <string name="item_name">Nombre del árticulo</string>
+    <string name="new_1_section_name">Nuevo 1 nombre de sección</string>
+    <string name="special_pizza_x1">Pizza Especial X1</string>
+    <string name="print">Print</string>
+</resources>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/change_pass_main_container"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBG"
+        android:id="@+id/main_sign_up"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:background="@color/colorBlack"
+            android:layout_height="65dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingEnd="60dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back_icon"
+                android:id="@+id/back_icon"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change_password"
+                android:textSize="20sp"
+                android:id="@+id/signup_title"
+                android:layout_centerInParent="true"
+                android:textStyle="normal"
+                android:textColor="@color/colorWhite"
+                android:gravity="center_horizontal|center_vertical" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_fname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="55dp"
+                    android:background="@color/colorWhite"
+                    android:gravity="center"
+                    android:text="@string/old_password"
+                    android:paddingStart="14dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/ed_old_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="55dp"
+                    android:layout_toEndOf="@+id/tv_fname"
+                    android:background="@color/colorWhite"
+                    android:hint="******"
+                    android:textSize="16sp"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorEditTextBG"
+                    android:inputType="textWebEmailAddress"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp" />
+
+                <TextView
+                    android:id="@+id/tv_lname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/tv_fname"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/colorWhite"
+                    android:gravity="center"
+                    android:text="@string/new_password"
+                    android:paddingStart="16dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/ed_new_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/ed_old_pass"
+                    android:layout_marginTop="1dp"
+                    android:layout_toEndOf="@+id/tv_lname"
+                    android:background="@color/colorWhite"
+                    android:hint="******"
+                    android:textSize="16sp"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorEditTextBG"
+                    android:inputType="textWebEmailAddress"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"/>
+
+                <TextView
+
+                    android:id="@+id/tv_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/ed_new_pass"
+                    android:background="@color/colorWhite"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:text="@string/confirm_password"
+                    android:paddingStart="14dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/ed_confirm_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/ed_new_pass"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="16sp"
+                    android:inputType="textWebEmailAddress"
+                    android:imeOptions="actionDone"
+                    android:layout_marginTop="1dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorEditTextBG"
+                    android:layout_toEndOf="@+id/tv_email"
+                    android:background="@color/colorWhite"
+                    android:hint="******"
+
+                    />
+
+                <Button
+                    android:id="@+id/btn_change_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/ed_confirm_pass"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/round_shape_btn_login"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="normal"
+                    android:text="@string/change"
+                    android:textSize="18sp"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    />
+
+                <ProgressBar
+                    android:id="@+id/changePassProgress"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_below="@+id/ed_confirm_pass"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"/>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
