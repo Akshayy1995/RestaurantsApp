@@ -14,7 +14,11 @@ public class Config {
     public static String baseURL = "https://rintechaqua.com/mobileapp_api/api/";
  public static String earning_url = "https://rintechaqua.com/restaurant/index1.php";
 
-    //URL to our login.php file
+   public static final String Privacy_policy="https://hangrymates.com.au/privacy-policy.html";
+   public static final String Terms_of_Use="https://docs.google.com/document/d/e/2PACX-1vR5dTurJFz7uckPlNOpttBAcfRdo77PUI705c4P9wi6SJ7UikJBubYKqUvrekM2BQ/pub";
+
+
+   //URL to our login.php file
     public static final String LOGIN_URL = baseURL+"login";
 
     public static final String CHANGE_PASSWORD = baseURL+"changePassword";

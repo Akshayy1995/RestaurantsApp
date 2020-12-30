@@ -79,7 +79,7 @@ public class HistroyFragment extends Fragment {
 
     String order_id;
 
-    private RelativeLayout order_detail_layout;
+    private RelativeLayout order_detail_layout,tax_div;
 
     ScrollView scrolView;
     LinearLayout hotel_btn_div;
@@ -107,6 +107,7 @@ public class HistroyFragment extends Fragment {
         orderHistoryProgress = v.findViewById(R.id.orderHistoryProgress);
         main_layout = v.findViewById(R.id.main_layout);
         no_job_div = v.findViewById(R.id.no_job_div);
+        tax_div = v.findViewById(R.id.tax_div);
         sPre = getContext().getSharedPreferences(PreferenceClass.user, Context.MODE_PRIVATE);
         getAllOrderParser();
 
@@ -371,6 +372,14 @@ public class HistroyFragment extends Fragment {
                             total_delivery_fee_tv.setText(currency_symbol+delivery_fee);
                             tax_tv.setText("("+tax+"%)");
                             Double getTotalTax = Double.parseDouble(tax)*Double.parseDouble(sub_total)/100;
+
+                            if (String.valueOf(getTotalTax).equals("0.00") || String.valueOf(getTotalTax).equals("0.0") ){
+
+                                tax_div.setVisibility(View.GONE);
+                            }else {
+                                tax_div.setVisibility(View.VISIBLE);
+                            }
+
                             total_tex_tv.setText(currency_symbol+String.valueOf(getTotalTax));
 
                             //// End

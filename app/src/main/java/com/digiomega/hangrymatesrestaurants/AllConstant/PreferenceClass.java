@@ -20,6 +20,7 @@ public class PreferenceClass {
 
     public static final String ORDER_HEADER = "orderHeader";
     public static final String ORDER_ID = "orderID";
+    public static final String ORDER_TYPE = "orderType";
     public static final String ORDER_INS= "orderInst";
 
     public static final String device_token="token";

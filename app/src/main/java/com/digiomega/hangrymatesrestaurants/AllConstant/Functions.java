@@ -1,7 +1,9 @@
 package com.digiomega.hangrymatesrestaurants.AllConstant;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.view.Window;
 
 
 import com.digiomega.hangrymatesrestaurants.R;
@@ -36,4 +38,27 @@ public class Functions {
 
     }
 
+    public static Dialog dialog;
+    public static void Show_loader(Context context, boolean outside_touch, boolean cancleable) {
+
+        dialog = new Dialog(context);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.item_progress_dialog_layout);
+
+
+        if(!outside_touch)
+            dialog.setCanceledOnTouchOutside(false);
+
+        if(!cancleable)
+            dialog.setCancelable(false);
+
+        dialog.show();
+
+    }
+
+    public static void cancel_loader(){
+        if(dialog!=null){
+            dialog.cancel();
+        }
+    }
 }

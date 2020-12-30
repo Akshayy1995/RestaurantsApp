@@ -125,6 +125,63 @@
                     android:paddingStart="15dp" />
 
 
+                <LinearLayout
+                    android:id="@+id/ll_check_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/ed_password"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_terms_condition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorBlack"
+                        android:checked="false"/>
+
+                    <TextView
+                        android:id="@+id/txt_terms_agree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginStart="4dp"
+                        android:textSize="14sp"
+                        android:text="Agree to">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txt_terms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/golden"
+                        android:layout_marginStart="4dp"
+                        android:textSize="14sp"
+                        android:text="Terms of Use">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginStart="4dp"
+                        android:textSize="14sp"
+                        android:text=" &amp; ">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txt_privacy_policy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/golden"
+                        android:layout_marginStart="4dp"
+                        android:textSize="14sp"
+                        android:text="Privacy Policy">
+                    </TextView>
+                </LinearLayout>
+
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -133,7 +190,7 @@
                     android:paddingStart="15dp"
                     android:paddingEnd="15dp"
                     android:layout_marginTop="15dp"
-                    android:layout_below="@+id/ed_password"
+                    android:layout_below="@+id/ll_check_box"
                     android:layout_weight="50">
 
                     <ProgressBar

@@ -102,7 +102,7 @@ public class JobsFragment extends Fragment {
     PercentRelativeLayout no_job_div;
 
     TextView inst_tv, hotel_name_tv, hotel_phone_number_tv, hotel_add_tv,sub_total_amount_tv, total_amount_tv, payment_method_tv,
-            order_user_name_tv, order_user_address_tv, order_user_number_tv, total_delivery_fee_tv,total_tip_tv, tax_tv, total_tex_tv, ordr_nmbr;
+            order_user_name_tv, order_user_address_tv, order_user_number_tv, total_delivery_fee_tv,total_tip_tv, tax_tv, total_tex_tv, ordr_nmbr,ordr_type;
     ExpandableListAdapter listAdapter;
     CustomExpandableListView customExpandableListView;
     ArrayList<MenuItemModel> listDataHeader;
@@ -115,7 +115,7 @@ public class JobsFragment extends Fragment {
     public static boolean FLAG_ACCEPT;
     ScrollView scrolView;
     LinearLayout hotel_btn_div;
-    RelativeLayout orders_div;
+    RelativeLayout orders_div,tax_div,tip_div,delivery_fee_div;
 
     boolean mIsReceiverRegistered = false;
     NewOrderBroadCast mReceiver = null;
@@ -148,6 +148,9 @@ public class JobsFragment extends Fragment {
 
 
         orders_div = view.findViewById(R.id.orders_div);
+        tax_div = view.findViewById(R.id.tax_div);
+        tip_div = view.findViewById(R.id.tip_div);
+        delivery_fee_div = view.findViewById(R.id.delivery_fee_div);
         FrameLayout frameLayout = view.findViewById(R.id.order_fragment_container);
         FontHelper.applyFont(getContext(), frameLayout, com.digiomega.hangrymatesrestaurants.AllConstant.Font.verdana);
         frameLayout.setOnTouchListener(new View.OnTouchListener() {
@@ -333,13 +336,16 @@ public class JobsFragment extends Fragment {
         String order_title = sPre.getString(PreferenceClass.ORDER_HEADER, "");
         String order_inst = sPre.getString(PreferenceClass.ORDER_INS, "");
         String order_number = sPre.getString(PreferenceClass.ORDER_ID, "");
+        String order_type = sPre.getString(PreferenceClass.ORDER_TYPE, "");
 
         hotel_btn_div = v.findViewById(R.id.hotel_btn_div);
         accept_div = v.findViewById(R.id.accept_div);
         decline_div = v.findViewById(R.id.decline_div);
         scrolView = v.findViewById(R.id.scrolView);
         ordr_nmbr = v.findViewById(R.id.ordr_nmbr);
+        ordr_type = v.findViewById(R.id.ordr_type);
         ordr_nmbr.setText("Order #" + order_number);
+        ordr_type.setText("( "+order_type+" )");
         /// All Text from API
         hotel_name_tv = v.findViewById(R.id.order_hotel_name);
         hotel_add_tv = v.findViewById(R.id.order_hotel_address);
@@ -444,7 +450,6 @@ public class JobsFragment extends Fragment {
 
 
         fRadapter.startListening();
-
         current_order_list.setAdapter(fRadapter);
         fRadapter.notifyDataSetChanged();
 
@@ -607,11 +612,19 @@ public class JobsFragment extends Fragment {
 
 
                             String rider_tip = orderJsonObject.optString("rider_tip");
+
+                            Log.d("rider_tip",rider_tip);
+
+                            if (rider_tip.equalsIgnoreCase("0")||rider_tip.equalsIgnoreCase("0.00")){
+                                tip_div.setVisibility(View.GONE);
+                            }else {
+                                tip_div.setVisibility(View.VISIBLE);
+                            }
+
                             if(rider_tip.equalsIgnoreCase("")){
                                 rider_tip = "0.0";
                             }
                             total_tip_tv.setText(currency_symbol+" "+rider_tip);
-
 
                             String tax = orderJsonObject.optString("tax");
                             String delivery_fee = orderJsonObject.optString("delivery_fee");
@@ -621,7 +634,19 @@ public class JobsFragment extends Fragment {
                                 tax_tv.setText("(" + "0" + "%)");
                             }
 
+                            Log.d("delivery_fee",delivery_fee);
+                            if (delivery_fee.equalsIgnoreCase("0")||delivery_fee.isEmpty()||delivery_fee.equalsIgnoreCase("0.00")){
+                                delivery_fee_div.setVisibility(View.GONE);
+                            }else {
+                                delivery_fee_div.setVisibility(View.VISIBLE);
+                            }
 
+
+                            if (tax.equals("0.00")|| tax.equals("0")){
+                                tax_div.setVisibility(View.GONE);
+                            }else {
+                                tax_div.setVisibility(View.VISIBLE);
+                            }
                             total_tex_tv.setText(tax);
                             String subTotal = orderJsonObject.optString("sub_total");
                             sub_total_amount_tv.setText(subTotal);
@@ -1042,7 +1067,7 @@ public class JobsFragment extends Fragment {
                 ringtoneSound = RingtoneManager.getRingtone(context, ringtoneUri);
                 ringtoneSound.play();
 
-                Click_on_order(intent.getStringExtra("order_id"));
+                Click_on_order(intent.getStringExtra("order_id"),"Empty");
             }
 
           }
@@ -1113,7 +1138,12 @@ public class JobsFragment extends Fragment {
                 @Override
                 public void onClick(View v) {
 
-                    Click_on_order(model.getOrder_id());
+                    if(model.getType().equalsIgnoreCase("0")){
+                        Click_on_order(model.getOrder_id(),"Pickup");
+                    }
+                    else {
+                        Click_on_order(model.getOrder_id(),"Delivery");                    }
+
 
                 }
             });
@@ -1166,7 +1196,7 @@ public class JobsFragment extends Fragment {
 
     }
 
-    public void Click_on_order(String order_id){
+    public void Click_on_order(String order_id, String order_type){
         ACCEPTED_ORDER = true;
         transparent_layer.setVisibility(View.VISIBLE);
         progressDialog.setVisibility(View.VISIBLE);
@@ -1174,6 +1204,7 @@ public class JobsFragment extends Fragment {
         fRadapter.notifyDataSetChanged();
         SharedPreferences.Editor editor = sPre.edit();
         editor.putString(PreferenceClass.ORDER_ID,order_id);
+        editor.putString(PreferenceClass.ORDER_TYPE,order_type);
         editor.putBoolean("Current_order",true);
         editor.commit();
         initViewMenuOrderExtraItem(view,false);
